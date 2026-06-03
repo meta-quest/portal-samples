@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Meta Platforms, Inc. and affiliates.
+     This source code is licensed under the MIT license found in the
+     LICENSE file in the root directory of this source tree. -->
+<resources>
+    <string name="app_name">Portal Sample App</string>
+
+    <!-- App bar -->
+    <string name="title_ui_showcase">UI Showcase</string>
+
+    <!-- Section headers -->
+    <string name="section_ui_elements">UI Elements</string>
+    <string name="section_permission_requests">Permission Requests</string>
+    <string name="section_camera_stream">Camera Stream</string>
+    <string name="section_audio_recorder">Audio Recorder</string>
+
+    <!-- UI Elements -->
+    <string name="btn_click_me">Click me</string>
+    <string name="btn_reset">Reset</string>
+    <string name="clicked_times">Clicked: %d times</string>
+    <string name="label_enter_text">Enter text</string>
+    <string name="slider_value">Slider: %d%%</string>
+    <string name="checkbox_checked">Checkbox is checked</string>
+    <string name="checkbox_unchecked">Checkbox is unchecked</string>
+    <string name="switch_on">Switch is ON</string>
+    <string name="switch_off">Switch is OFF</string>
+    <string name="label_radio_buttons">Radio Buttons:</string>
+    <string name="selected_option">Selected: %s</string>
+    <string name="card_title">Material3 Card</string>
+    <string name="card_body">Cards are surfaces that display related content and actions.</string>
+    <string name="label_favorite_color">Favorite color</string>
+
+    <!-- Permissions -->
+    <string name="permission_camera">Camera</string>
+    <string name="permission_location">Fine Location</string>
+    <string name="permission_contacts">Read Contacts</string>
+    <string name="permission_audio">Record Audio</string>
+    <string name="permission_all">All at once</string>
+    <string name="status_granted">Granted</string>
+    <string name="status_denied">Denied</string>
+    <string name="btn_request">Request</string>
+
+    <!-- Camera -->
+    <string name="btn_open_camera">Open Camera</string>
+    <string name="btn_close_camera">Close Camera</string>
+    <string name="error_camera_permission">Camera permission required — grant it in the section above.</string>
+    <string name="camera_back">Back</string>
+    <string name="camera_front">Front</string>
+    <string name="camera_other">Cam %d</string>
+    <string name="error_no_camera">No camera found on this device.</string>
+    <string name="error_camera_generic">Camera error.</string>
+
+    <!-- Audio recorder -->
+    <string name="audio_status_idle">Ready to record</string>
+    <string name="audio_status_recording">Recording…</string>
+    <string name="audio_status_recorded">Recording saved — tap Play to listen</string>
+    <string name="audio_status_playing">Playing back…</string>
+    <string name="error_audio_permission">Microphone permission required — grant it in the section above.</string>
+    <string name="btn_record">Record</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_play">Play</string>
+</resources>

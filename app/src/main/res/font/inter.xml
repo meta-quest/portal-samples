@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Meta Platforms, Inc. and affiliates.
+     This source code is licensed under the MIT license found in the
+     LICENSE file in the root directory of this source tree. -->
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:fontProviderAuthority="com.google.android.gms.fonts"
+    app:fontProviderPackage="com.google.android.gms"
+    app:fontProviderQuery="Inter"
+    app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>
