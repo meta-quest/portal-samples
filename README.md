@@ -2,6 +2,17 @@
 
 A minimal Android application for Meta Portal touch and TV devices. This sample demonstrates how to structure a Portal project, follow UI guidelines, and use device features (camera, microphone) with correct SDK configuration for Portal hardware.
 
+## Quick Start with AI Tooling
+
+The easiest way to get started is with the **portal-development** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It gives your AI coding tool full knowledge of Portal constraints, design requirements, and the build/deploy loop — just describe what you want to build:
+
+```bash
+npx -y @meta-quest/hzdb --version     # Install hzdb (requires Node.js 20+)
+hzdb mcp install <your-tool>           # Connect to your AI coding tool
+```
+
+Supported tools: `claude-code`, `cursor`, `vscode`, `android-studio`, `codex`, `zed`, `windsurf`, `gemini-cli`. Run `hzdb mcp install --help` for the full list.
+
 ## Getting Started
 
 1. Set up your Portal device with ADB enabled and connect via USB-C
@@ -34,24 +45,11 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 Portal devices have specific design requirements due to their form factor (tabletop displays and TV). Review the [design requirements documentation](https://developers.meta.com/horizon/documentation/android-apps/portal-design-requirements), or use our AI tooling to ensure that whatever you build is compatible with Portal hardware.
 
-## AI Tooling
-
-[Horizon Debug Bridge (hzdb)](https://github.com/meta-quest/agentic-tools) wraps ADB with higher-level commands and includes an MCP server that connects directly to your AI coding tool:
-
-```bash
-npx -y @meta-quest/hzdb --version     # Run without installing
-npm install -g @meta-quest/hzdb        # Or install globally
-hzdb mcp install <your-tool>           # Connect to your AI coding tool
-```
-
-Supported tools: `claude-code`, `cursor`, `vscode`, `android-studio`, `codex`, `zed`, `windsurf`, `gemini-cli`. Run `hzdb mcp install --help` for the full list.
-
-This repo includes an `AGENTS.md` file that AI coding tools read automatically to understand Portal constraints and how to work with the project.
-
 ## References
 
 - [Portal development documentation](https://developers.meta.com/horizon/documentation/android-apps/portal-development/)
-- [Horizon OS design requirements](https://developers.meta.com/horizon/documentation/android-apps/portal-design-requirements)
+- [Design requirements](https://developers.meta.com/horizon/documentation/android-apps/portal-design-requirements)
+- [AI tooling](https://developers.meta.com/horizon/documentation/android-apps/portal-ai-tooling)
 - [Agentic tools (hzdb)](https://github.com/meta-quest/agentic-tools)
 
 ## License

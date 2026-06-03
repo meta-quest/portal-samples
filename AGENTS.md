@@ -2,6 +2,19 @@
 
 A minimal Android app for building on discontinued Meta Portal touch and TV devices. Demonstrates UI controls, runtime permissions, camera preview, and audio recording/playback — preconfigured for Portal hardware constraints.
 
+## Quick Start: Portal Development Skill
+
+The easiest way to work with this project is to load the **portal-development** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It covers Portal hardware constraints, design requirements, toolchain setup, the build/deploy loop, and debugging — all in one self-contained skill:
+
+```bash
+npx -y @meta-quest/hzdb --version          # Install hzdb (requires Node.js 20+)
+hzdb mcp install <your-tool>               # Connect to your AI coding tool
+```
+
+Load it with `/read-skill portal-development` or by mentioning Portal when hzdb's MCP server is connected.
+
+If you prefer to work without the skill, the rest of this file contains everything you need.
+
 ## Project Structure
 
 ```
@@ -150,18 +163,6 @@ Portal renders icons at 192–280dp using a non-standard launcher:
 - **Add a new section:** Create a new `@Composable` function, add it to `ShowcaseScreen()` in `MainActivity.kt` with a `HorizontalDivider()` separator
 - **Support Portal TV:** Add a `LEANBACK_LAUNCHER` intent filter and `android:banner` to the manifest; add D-pad focus handling to all interactive elements
 - **Change app icon:** Replace `ic_launcher.webp` in `mipmap-xxxhdpi/` with a 512×512px PNG; remove `mipmap-anydpi-v26` adaptive icon if present
-
-## AI Tooling
-
-Install [hzdb](https://github.com/meta-quest/agentic-tools) (Horizon Debug Bridge) for direct device access from your AI coding tool:
-
-```bash
-npx -y @meta-quest/hzdb --version     # Run without installing
-npm install -g @meta-quest/hzdb        # Or install globally
-hzdb mcp install <your-tool>           # Connect to your AI coding tool
-```
-
-Supported tools: `claude-code`, `cursor`, `vscode`, `android-studio`, `codex`, `zed`, `windsurf`, `gemini-cli`. Run `hzdb mcp install --help` for the full list.
 
 ## References
 
