@@ -4,7 +4,7 @@ A minimal Android application for Meta Portal touch and TV devices. This sample 
 
 ## Quick Start with AI Tooling
 
-The easiest way to get started is with the **portal-development** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It gives your AI coding tool full knowledge of Portal constraints, design requirements, and the build/deploy loop — just describe what you want to build:
+The easiest way to get started is with the **portal** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It gives your AI coding tool full knowledge of Portal constraints, design requirements, and the build/deploy loop — just describe what you want to build:
 
 ```bash
 npx -y @meta-quest/hzdb --version     # Install hzdb (requires Node.js 20+)

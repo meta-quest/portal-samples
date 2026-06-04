@@ -4,14 +4,14 @@ A minimal Android app for building on discontinued Meta Portal touch and TV devi
 
 ## Quick Start: Portal Development Skill
 
-The easiest way to work with this project is to load the **portal-development** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It covers Portal hardware constraints, design requirements, toolchain setup, the build/deploy loop, and debugging — all in one self-contained skill:
+The easiest way to work with this project is to load the **portal** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It covers Portal hardware constraints, design requirements, toolchain setup, the build/deploy loop, and debugging — all in one self-contained skill:
 
 ```bash
 npx -y @meta-quest/hzdb --version          # Install hzdb (requires Node.js 20+)
 hzdb mcp install <your-tool>               # Connect to your AI coding tool
 ```
 
-Load it with `/read-skill portal-development` or by mentioning Portal when hzdb's MCP server is connected.
+Load it with `/read-skill portal` or by mentioning Portal when hzdb's MCP server is connected.
 
 If you prefer to work without the skill, the rest of this file contains everything you need.
 
