@@ -4,14 +4,10 @@ A minimal Android application for Meta Portal touch and TV devices. This sample 
 
 ## Quick Start with AI Tooling
 
-The easiest way to get started is with the **portal** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It gives your AI coding tool full knowledge of Portal constraints, design requirements, and the build/deploy loop — just describe what you want to build:
+The easiest way to get started is with the **portal** skill — it gives your AI coding tool full knowledge of Portal constraints, design requirements, and the build/deploy loop, so you can just describe what you want to build. The skill runs on the Meta VR CLI.
 
-```bash
-npx -y @meta-quest/hzdb --version     # Install hzdb (requires Node.js 20+)
-hzdb mcp install <your-tool>           # Connect to your AI coding tool
-```
-
-Supported tools: `claude-code`, `cursor`, `vscode`, `android-studio`, `codex`, `zed`, `windsurf`, `gemini-cli`. Run `hzdb mcp install --help` for the full list.
+- **Use the skill:** get the **portal** skill from [agentic-tools](https://github.com/meta-quest/agentic-tools). The first time you use it, it auto-installs the Meta VR CLI for you.
+- **Don't want the Meta VR CLI?** It's required for the skill, so build manually instead — see [Getting Started](#getting-started) below.
 
 ## Getting Started
 
@@ -50,7 +46,7 @@ Portal devices have specific design requirements due to their form factor (table
 - [Portal development documentation](https://developers.meta.com/horizon/documentation/android-apps/portal-development/)
 - [Design requirements](https://developers.meta.com/horizon/documentation/android-apps/portal-design-requirements)
 - [AI tooling](https://developers.meta.com/horizon/documentation/android-apps/portal-ai-tooling)
-- [Agentic tools (hzdb)](https://github.com/meta-quest/agentic-tools)
+- [Agentic tools (Meta VR CLI)](https://github.com/meta-quest/agentic-tools)
 
 ## License
 

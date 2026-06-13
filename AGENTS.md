@@ -4,16 +4,11 @@ A minimal Android app for building on discontinued Meta Portal touch and TV devi
 
 ## Quick Start: Portal Development Skill
 
-The easiest way to work with this project is to load the **portal** skill from [hzdb](https://github.com/meta-quest/agentic-tools). It covers Portal hardware constraints, design requirements, toolchain setup, the build/deploy loop, and debugging — all in one self-contained skill:
+The **portal** skill is the easiest way to work with this project — it covers Portal hardware constraints, design requirements, toolchain setup, the build/deploy loop, and debugging. It runs on the Meta VR CLI. Pick the path that matches your setup:
 
-```bash
-npx -y @meta-quest/hzdb --version          # Install hzdb (requires Node.js 20+)
-hzdb mcp install <your-tool>               # Connect to your AI coding tool
-```
-
-Load it with `/read-skill portal` or by mentioning Portal when hzdb's MCP server is connected.
-
-If you prefer to work without the skill, the rest of this file contains everything you need.
+- **Already have the Meta VR CLI installed?** Just call the skill — `/read-skill portal` or mention Portal to your AI coding tool.
+- **Don't have it yet?** Get the **portal** skill from [agentic-tools](https://github.com/meta-quest/agentic-tools). The first time you use it, it auto-installs the Meta VR CLI for you.
+- **Don't want to use the Meta VR CLI?** It's required for the skill, so skip the skill — the rest of this file has everything you need to build and deploy manually.
 
 ## Project Structure
 
@@ -48,10 +43,10 @@ adb install app/build/outputs/apk/debug/app-debug.apk     # Install on Portal
 adb shell am start -n com.meta.portal.sampleapp/.MainActivity  # Launch
 ```
 
-If hzdb is installed:
+If the Meta VR CLI is installed:
 ```bash
-hzdb app install app/build/outputs/apk/debug/app-debug.apk
-hzdb app launch com.meta.portal.sampleapp
+metavr app install app/build/outputs/apk/debug/app-debug.apk
+metavr app launch com.meta.portal.sampleapp
 ```
 
 ## Architecture
@@ -169,4 +164,4 @@ Portal renders icons at 192–280dp using a non-standard launcher:
 - [Portal development documentation](https://developers.meta.com/horizon/documentation/android-apps/portal-development)
 - [Design requirements](https://developers.meta.com/horizon/documentation/android-apps/portal-design-requirements)
 - [AI tooling](https://developers.meta.com/horizon/documentation/android-apps/portal-ai-tooling)
-- [Agentic tools (hzdb)](https://github.com/meta-quest/agentic-tools)
+- [Agentic tools (Meta VR CLI)](https://github.com/meta-quest/agentic-tools)
