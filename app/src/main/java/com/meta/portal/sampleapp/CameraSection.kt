@@ -177,19 +177,19 @@ fun CameraViewfinder(
                         provider.availableCameraInfos
                             .mapIndexedNotNull { i, info ->
                               runCatching {
-                                    val label =
-                                        when (info.lensFacing) {
-                                          CameraSelector.LENS_FACING_BACK ->
-                                              ctx.getString(R.string.camera_back)
-                                          CameraSelector.LENS_FACING_FRONT ->
-                                              ctx.getString(R.string.camera_front)
-                                          else -> ctx.getString(R.string.camera_other, i + 1)
-                                        }
-                                    label to
-                                        CameraSelector.Builder()
-                                            .requireLensFacing(info.lensFacing)
-                                            .build()
-                                  }
+                                val label =
+                                    when (info.lensFacing) {
+                                      CameraSelector.LENS_FACING_BACK ->
+                                          ctx.getString(R.string.camera_back)
+                                      CameraSelector.LENS_FACING_FRONT ->
+                                          ctx.getString(R.string.camera_front)
+                                      else -> ctx.getString(R.string.camera_other, i + 1)
+                                    }
+                                label to
+                                    CameraSelector.Builder()
+                                        .requireLensFacing(info.lensFacing)
+                                        .build()
+                              }
                                   .getOrNull()
                             }
                             .distinctBy { it.first }
